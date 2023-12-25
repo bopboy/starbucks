@@ -117,3 +117,7 @@ new Swiper(".awards .swiper", {
     nextEl: ".awards .swiper-next",
   },
 });
+
+// 저작권 연도
+const thisYear = document.querySelector(".this-year");
+thisYear.textContent = new Date().getFullYear();
