@@ -56,6 +56,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- scroll magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <!-- youtube -->
     <script src="./js/youtube.js" defer></script>
     <!-- main.js -->
@@ -558,7 +560,7 @@
       </div>
     </section>
     <!-- SEASON PRODUCT -->
-    <section class="season-product">
+    <section class="season-product scroll-spy">
       <div class="inner">
         <img
           src="./images/floating3.png"
@@ -567,66 +569,66 @@
         />
         <img
           src="./images/season_product_image.png"
-          class="product"
+          class="product back-to-position to-right delay-0"
           alt="season-product"
         />
         <div class="text-group">
           <img
             src="./images/season_product_text1.png"
-            class="title"
+            class="title back-to-position to-left delay-1"
             alt="season_product_text1"
           />
           <img
             src="./images/season_product_text2.png"
-            class="description"
+            class="description back-to-position to-left delay-2"
             alt="season_product_text2"
           />
-          <div class="more">
+          <div class="more back-to-position to-left delay-3">
             <a href="javascript:void(0)" class="btn">자세히 보기</a>
           </div>
         </div>
       </div>
     </section>
     <!-- RESERVE COFFEE -->
-    <section class="reserve-coffee">
+    <section class="reserve-coffee scroll-spy">
       <div class="inner">
         <img
           src="./images/reserve_logo.png"
-          class="reserve-logo"
+          class="reserve-logo back-to-position to-right delay-0"
           alt="reserve-coffee"
         />
         <div class="text-group">
           <img
             src="./images/reserve_text.png"
-            class="description"
+            class="description back-to-position to-right delay-1"
             alt="reserve_text"
           />
-          <div class="more">
+          <div class="more back-to-position to-right delay-2">
             <a href="javascript:void(0)" class="btn btn--gold">자세히 보기</a>
           </div>
         </div>
         <img
           src="./images/reserve_image.png"
-          class="product"
+          class="product back-to-position to-left delay-3"
           alt="reserve_image"
         />
       </div>
     </section>
     <!-- PICK YOUR FAVORITE -->
-    <section class="pick-your-favorite">
+    <section class="pick-your-favorite scroll-spy">
       <div class="inner">
         <div class="text-group">
           <img
             src="./images/favorite_text1.png"
-            class="title"
+            class="title back-to-position to-right delay-0"
             alt="favorite_text1"
           />
           <img
             src="./images/favorite_text2.png"
-            class="description"
+            class="description back-to-position to-right delay-1"
             alt="favorite_text2"
           />
-          <div class="more">
+          <div class="more back-to-position to-right delay-2">
             <a href="javascript:void(0)" class="btn btn--white">자세히 보기</a>
           </div>
         </div>
@@ -653,7 +655,7 @@
       </div>
     </section>
     <!-- FIND THE STROE -->
-    <section class="find-store">
+    <section class="find-store scroll-spy">
       <div class="inner">
         <img
           src="./images/find_store_texture1.png"
@@ -667,20 +669,28 @@
         />
         <img
           src="./images/find_store_picture1.jpg"
-          class="picture picture1"
+          class="picture picture1 back-to-position to-right delay-0"
           alt="find_store_picture1"
         />
         <img
           src="./images/find_store_picture2.jpg"
-          class="picture picture2"
+          class="picture picture2 back-to-position to-right delay-1"
           alt="find_store_picture2"
         />
         <div class="text-group">
-            <img src="./images/find_store_text1.png" class="title" alt="find_store_text1">
-            <img src="./images/find_store_text2.png" class="description" alt="find_store_text2">
-            <div class="more">
-                <a href="javascript:void(0)" class="btn">매장 찾기</a>
-            </div>
+          <img
+            src="./images/find_store_text1.png"
+            class="title back-to-position to-left delay-0"
+            alt="find_store_text1"
+          />
+          <img
+            src="./images/find_store_text2.png"
+            class="description back-to-position to-left delay-1"
+            alt="find_store_text2"
+          />
+          <div class="more back-to-position to-left delay-2">
+            <a href="javascript:void(0)" class="btn">매장 찾기</a>
+          </div>
         </div>
       </div>
     </section>
