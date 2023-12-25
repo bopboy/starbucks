@@ -63,3 +63,17 @@ new Swiper(".promotion .swiper", {
     nextEl: ".promotion .swiper-next",
   },
 });
+
+// 프로모션 영역 토글
+const promotionEl = document.querySelector(".promotion");
+const promotionToggleBtn = document.querySelector(".toggle-promotion");
+let isHidePromotion = false;
+
+promotionToggleBtn.addEventListener("click", function () {
+  isHidePromotion = !isHidePromotion;
+  if (isHidePromotion) {
+    promotionEl.classList.add("hide");
+  } else {
+    promotionEl.classList.remove("hide");
+  }
+});
