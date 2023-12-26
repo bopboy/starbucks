@@ -18,18 +18,23 @@ searchInputEl.addEventListener("blur", function () {
 
 // 뱃지 관련
 const badgeEl = document.querySelector("header .badges");
+const toTopEl = document.querySelector("#to-top");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
     if (window.scrollY > 500) {
-      //   badgeEl.style.display = "none";
       gsap.to(badgeEl, 0.6, { opacity: 0, display: "none" });
+      gsap.to(toTopEl, 0.2, { x: 0 });
     } else {
-      //   badgeEl.style.display = "block";
       gsap.to(badgeEl, 0.6, { opacity: 1, display: "block" });
+      gsap.to(toTopEl, 0.2, { x: 100 });
     }
   }, 300)
 );
+// 최상단 이동
+toTopEl.addEventListener("click", function () {
+  gsap.to(window, 0.7, { scrollTo: 0 });
+});
 
 // 중간 이미지 영역
 const fadeEls = document.querySelectorAll(".visual .fade-in");
